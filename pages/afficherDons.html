@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des dons</title>
+</head>
+
+<body>
+
+    <h1>Liste des dons</h1>
+    <table>
+        <thead>
+            <tr>
+                <th> Prénom </th>
+                <th> Nom </th>
+                <th> Téléphone </th>
+                <th> Courriel </th>
+                <th> Montant du don </th>
+                <th> Message </th>
+            </tr>
+        </thead>
+        <tbody id="data">
+            <!-- Les données seront insérées ici par JavaScript -->
+        </tbody>
+    </table>
+
+    <script>
+        const tableBody = document.getElementById("data");
+        //écraser le contenu de la table
+        tableBody.innerHTML = '';
+        fetch('http://localhost:3002/api/allDons') //GET par défaut
+            .then((resp) => resp.json()) // données en JSON
+            .then(function (data) {//traitement des données
+                let dons = data;
+                //DOM pour remplir la table avec les données récupérées
+                for (i = 0; i < dons.length; i++) {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                    <td>${dons[i].prenom}</td>
+                    <td>${dons[i].nom}</td>
+                    <td>${dons[i].telephone}</td>
+                    <td>${dons[i].courriel}</td>
+                    <td>${dons[i].don}</td>
+                    <td>${dons[i].message}</td>
+                    `;
+                    tableBody.appendChild(row);
+                }
+
+            })
+            .catch(function (error) { console.log(error); });
+
+    </script>
+</body>
+
+</html>

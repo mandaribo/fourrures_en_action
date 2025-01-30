@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/contacter.css">
+    <title>Contacter</title>
+</head>
+<body>
+    <header>
+        <div id="logo-titre">
+            <a href="../index.html">
+                <ul>
+                    <li><img src="../images/accueil/paw-icon.svg" alt="Logo du site en forme dune patte" width="30px"></li>
+                    <li><h1>Fourrures En Action</h1></li>
+                </ul>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="animaux.html">Animaux</a></li>
+                <li><a href="a_propos.html">À propos</a></li>
+                <li><a href="donner.html">Donner</a></li>
+                <li><a href="contacter.html" id="page-active">Contacter</a></li>
+                <li><a href="participer.html">Participer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2>Nos contacts</h2>
+            <div class="adresses">
+                <table>
+                    <tr>
+                        <th>Services de membres</th>
+                        <td><a href="mailto:">membres@fourureaction.org</a></td>
+                        <td><a href="">1 (999) 999-9999</a></td>
+                    </tr>
+                    <tr>
+                        <th>Questions sur levées de fonds</th>
+                        <td><a href="mailto:">equipefonds@fourureaction.org</a></td>
+                        <td><a href="">1 (999) 888-8888</a></td>
+                    </tr>
+                    <tr>
+                        <th>Page Instagram</th>
+                        <td><a href="https://www.instagram.com/" target="_blank">@FourruresEnAction</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Page Facebook</th>
+                        <td><a href="https://www.facebook.com/" target="_blank">FourruresEnAction</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Profil Twitter/X</th>
+                        <td><a href="https://x.com/?lang=fr" target="_blank">@FourruresEnAction</a></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <aside>
+                    <h2><a href="https://www.google.com/maps" target="_blank">Siège social</a></h2>
+                    <p>Fourrures En Action</p>
+                    <p>999 rue Boulevard O.</p>
+                    <p>Montréal, Québec</p>
+                    <p>1 (999) 777-7777</p>
+                </aside>
+            </div>
+        </div>
+        <div>
+            <h2>Formulaire de contact</h2>
+            <p>Si vous n'êtes pas certain où nous contacter, vous pouvez toujours utiliser le formulaire ci-dessous pour nous contacter.</p>
+            <form action="" id="contactForm">
+                <label for="courriel">Votre adresse courriel<span class="requis">*</span></label>
+                <input type="email" id="courriel" name="courriel">
+                <label for="sujet">Sujet<span class="requis">*</span></label>
+                <input type="text" id="sujet" name="sujet">
+                <label for="description">Description<span class="requis">*</span></label>
+                <textarea id="description" name="description" rows="15"></textarea>
+                <input type="submit" id="soumettre" value="Envoyer">
+                <script src="../scripts/script_survol.js"></script>
+                <!--<div id="error"><p id="errorMessages"></p></div>--> <!-- Section pour les messages d'erreur -->
+            </form>
+        </div>
+        
+        <div>
+            <h2>Restez à jour grâce à notre infolettre hebdomadaire!</h2>
+            <button>Je m'abonne</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footerNav">
+            <a href="a_propos.html">
+                <h2>Découvrez</h2>
+                <p>Les membres de notre équipe et ce qu'ils font pour protéger des mammifères en voie d'extinction.</p>
+            </a>
+            <a href="contacter.html">
+                <h2>Dites-nous</h2>
+                <p>Ce que vous pensez! Votre opinion est important et pourrait sauver des animaux en danger.</p>
+            </a>
+            <a href="donner.html">
+                <h2>Donnez</h2>
+                <p>Pour une cause charitable et aidez une faune qui a besoin de vous.</p>
+            </a>
+            <a href="participer.html">
+                <h2>Participez</h2>
+                <p>À l'effort pour un futur riche en diversité animale et faites une différence.</p>
+            </a>
+        </div>
+        <hr>
+        <div class="footerLiens">
+            <span class="reseauxSociaux">
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/footer/Instagram_Glyph_White.svg" alt="Logo Instagram">@FourruresEnAction</a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/footer/Facebook_Logo_Secondary.png" alt="Logo Facebook">FourruresEnAction</a>
+                <a href="https://x.com/?lang=fr" target="_blank"><img src="../images/footer/logo_X.svg" alt="Logo X">@FourruresEnAction</a>
+            </span>
+            <span>
+                <a href="#logo-titre">Retour en haut</a>
+            </span>
+        </div>
+    </footer>
+    <script src="../scripts/script_contact.js"></script>
+</body>
+</html>

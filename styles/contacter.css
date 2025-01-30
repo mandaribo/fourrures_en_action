@@ -1,0 +1,47 @@
+main h2{
+    margin-top: 2em;
+}
+
+/*section Nos contacts*/
+.adresses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.adresses table{
+    width: 60%;
+    height: 15em;
+    text-align: left;
+}
+.adresses table, th, td{ /*pour les bordures du tableau*/
+    border-bottom: 1px solid;
+    border-collapse: collapse;
+    border-color: var(--menu-page-active);
+}
+
+.adresses aside{
+    width: auto;
+    padding: 2em;
+    text-align: center;
+}
+.adresses aside h2{
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+.adresses aside p{
+    margin-top: 0.5em;
+}
+
+/*section Formulaire*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+#courriel, #sujet{
+    width: 20%;
+}
+label{
+    margin-top: 0.5em;
+    margin-bottom: 0.1em;
+}

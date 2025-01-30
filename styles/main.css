@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Oxygen:wght@300;400;700&display=swap');
+:root{
+    /*couleurs*/
+    --bg-page-color: #E6EEE7;
+    --bg-header-color: #2d6736;
+    --white: #ffffff;
+    --menu-page-active: #78b37c;
+    --bg-aside: #ffffffa6;
+    --couleur-requis: #FF0000;
+    /*police régulière*/
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: var(--bg-page-color);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: var(--bg-header-color);
+}
+
+/*style de header*/
+header{
+    color: var(--white);
+    background-color: var(--bg-header-color);
+    left: 0;
+    top:0;
+    width: 100%;
+}
+
+header img{
+    margin-right: 10px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: baseline;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 1% 10% 1% 10%;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+header a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+#page-active{
+    color: var(--menu-page-active);
+    font-weight: 800;
+}
+
+h1{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*style de footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--bg-header-color);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    padding-top: 0.5em;
+    margin-top: auto;
+}
+
+.footerNav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.footerNav a{
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    text-decoration: none;
+    width: 15%;
+}
+.footerNav h2{
+    margin-bottom: 0px;
+    text-decoration:underline;
+}
+
+footer hr{
+    width: 90%;
+    height: 3px;
+    border-width: 0;
+    background-color: var(--menu-page-active);
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.footerLiens{
+    display: flex;
+    justify-content: space-between;
+}
+.footerLiens .reseauxSociaux{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.footerLiens a{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+.footerLiens img{
+    width: 1.7em;
+    margin-right: 0.4em;
+}
+
+/*style de main*/
+main{
+    flex: 1;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*style de aside*/
+aside{
+    width: 40%;
+    min-width: 10em;
+    background-color: var(--bg-aside);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+input, textarea{
+    font-family: "Oxygen", sans-serif;
+}
+form .requis{
+    color: var(--couleur-requis);
+}
+
+/*resultats de formulaire*/
+#error, #error0, #error1, #error2{
+    color:var(--white);
+    width: 40%;
+    min-width: 10em;
+    background-color: red;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#success{
+    color:var(--white);
+    width: 40%;
+    min-width: 10em;
+    background-color: var(--bg-header-color);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+
+/*boutons*/
+#soumettre{
+    margin-top: 1em;
+    background-color: var(--bg-header-color);
+    color: var(--white);
+    border: 0;
+    border-radius: 0.7em;
+    padding: 0.7em;
+    width: fit-content;
+    font-family: "Oxygen", sans-serif;
+    font-size: large;
+}
+button{
+    background-color: var(--bg-header-color);
+    color: var(--white);
+    border: 0;
+    border-radius: 0.7em;
+    padding: 0.7em;
+    margin-bottom: 2em;
+    width: fit-content;
+    font-family: "Oxygen", sans-serif;
+    font-size: large;
+    transition: 0.2s;
+}
+button:hover{
+    font-size: larger;
+    background-color: var(--menu-page-active);
+}

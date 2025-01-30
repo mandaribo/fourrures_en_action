@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/participer.css">
+    <title>Participer</title>
+</head>
+<body>
+    <header>
+        <div id="logo-titre">
+            <a href="../index.html">
+                <ul>
+                    <li><img src="../images/accueil/paw-icon.svg" alt="Logo du site en forme dune patte" width="30px"></li>
+                    <li><h1>Fourrures En Action</h1></li>
+                </ul>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="animaux.html">Animaux</a></li>
+                <li><a href="a_propos.html">À propos</a></li>
+                <li><a href="donner.html">Donner</a></li>
+                <li><a href="contacter.html">Contacter</a></li>
+                <li><a href="participer.html" id="page-active">Participer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Comment nous aider</h2>
+        <div class="intro-participer">
+            <div>
+                <p>Fourrures En Action organise constamment des évènements pour aider les mammifères en voie d'extinction.</p>
+                <p>Cependant, Fourrures En Action a besoin de vous.</p>
+                <p>
+                    Prenez connaissance de nos évènements à travers nos réseaux sociaux et notre infolettre puis remplissez le formulaire ci-dessous pour devenir membre et
+                    vous mettre à la cause!
+                </p>
+            </div>
+            <aside>
+                <a href="a_propos.html">Apprenez plus sur nos actions!</a>
+                <a href="">Abonnez-vous à notre infolettre!</a>
+            </aside>
+        </div>
+        <div id="formulaire-participer">
+            <h2>Appliquez pour devenir membre</h2>
+            <form action="">
+                <h3>Renseignements personnels<span class="requis">*</span></h3>
+
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom">
+
+                <label for="nomF">Nom de famille</label>
+                <input type="text" id="nomF" name="nomF">
+
+                <label for="telephone">Numéro de téléphone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="1234567890" maxlength="10">
+
+                <label for="courriel">Adresse courriel</label>
+                <input type="email" id="courriel" name="courriel" placeholder="adresse@courriel.com">
+
+                <div class="form-double">
+                    <label for="password">Mot de passe
+                        <input type="text" name="password" id="password">
+                    </label>
+                    <label for="confirmer">Confirmer mot de passe
+                        <input type="text" name="confirmer" id="confirmer">
+                    </label>
+                </div>
+                <div id="erreurs-personnel"></div>
+
+
+                <h3>Adresse<span class="requis">*</span></h3>
+                <div class="form-double">
+                    <label for="rue">Nom de rue
+                        <input type="text" id="rue" name="rue">
+                    </label>
+                    
+                    <label for="rue">Numéro d'immeuble
+                        <input type="text" id="immeuble" name="immeuble">
+                    </label>
+    
+                    <label for="postal">Code postal
+                        <input type="text" id="postal" name="postal" maxlength="7" placeholder="A1A 1A1">
+                    </label>
+    
+                    <label for="pays">Pays
+                        <select name="pays" id="pays">
+                            <option value="canada">Canada</option>
+                            <option value="etas-unis">Étas-Unis</option>
+                            <option value="france">France</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </label>
+    
+                    <label for="region">État/Province/Région/Territoire
+                        <input type="text" id="region" name="region">
+                    </label>
+    
+                    <label for="ville">Ville
+                        <input type="text" id="ville" name="ville">
+                    </label>
+                </div>
+                <div id="erreurs-adresse"></div>
+
+                <h3>Age<span class="requis">*</span></h3>
+                <p>Avez vous plus de 18 ans?</p>
+                <label for="majeur">
+                    <input type="radio" id="majeur" name="age" value="Majeur">
+                    Oui - J'ai 18 ans ou plus, je peux participer dans toutes les sphères de l'organisme.
+                </label>
+                <label for="mineur">
+                    <input type="radio" id="mineur" name="age" value="Mineur">
+                    Non - J'ai 17 ans ou moins, je peux participer mais je ne peux pas occuper une position de bureau.
+                </label>
+                <div id="erreurs-age"></div>
+
+                <h3>Informations suplémentaires (optionel)</h3>
+                
+                <label for="comment">Comment avez vous pris connaissance de Fourrures En Action?</label>
+                <textarea name="comment" id="comment" rows="10"></textarea>
+
+                <label for="infolettre">
+                    <input type="checkbox" id="infolettre" name="infolettre" checked>
+                    Je souhaite m'inscrire à l'infolettre pour rester à jour sur les activités de Fourrures En Action
+                </label>
+                
+                <input type="submit" name="submit" id="soumettre">
+                <script src="../scripts/script_survol.js"></script>
+            </form>
+            <script src="../scripts/script_inscription.js"></script>
+        </div>
+    </main>
+    <footer>
+        <div class="footerNav">
+            <a href="a_propos.html">
+                <h2>Découvrez</h2>
+                <p>Les membres de notre équipe et ce qu'ils font pour protéger des mammifères en voie d'extinction.</p>
+            </a>
+            <a href="contacter.html">
+                <h2>Dites-nous</h2>
+                <p>Ce que vous pensez! Votre opinion est important et pourrait sauver des animaux en danger.</p>
+            </a>
+            <a href="donner.html">
+                <h2>Donnez</h2>
+                <p>Pour une cause charitable et aidez une faune qui a besoin de vous.</p>
+            </a>
+            <a href="participer.html">
+                <h2>Participez</h2>
+                <p>À l'effort pour un futur riche en diversité animale et faites une différence.</p>
+            </a>
+        </div>
+        <hr>
+        <div class="footerLiens">
+            <span class="reseauxSociaux">
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/footer/Instagram_Glyph_White.svg" alt="Logo Instagram">@FourruresEnAction</a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/footer/Facebook_Logo_Secondary.png" alt="Logo Facebook">FourruresEnAction</a>
+                <a href="https://x.com/?lang=fr" target="_blank"><img src="../images/footer/logo_X.svg" alt="Logo X">@FourruresEnAction</a>
+            </span>
+            <span>
+                <a href="#logo-titre">Retour en haut</a>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>

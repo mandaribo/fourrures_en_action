@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/donner.css">
+    <title>Donner</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo-titre">
+            <a href="../index.html">
+                <ul>
+                    <li><img src="../images/accueil/paw-icon.svg" alt="Logo du site en forme dune patte" width="30px">
+                    </li>
+                    <li>
+                        <h1>Fourrures En Action</h1>
+                    </li>
+                </ul>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="animaux.html">Animaux</a></li>
+                <li><a href="a_propos.html">À propos</a></li>
+                <li><a href="donner.html" id="page-active">Donner</a></li>
+                <li><a href="contacter.html">Contacter</a></li>
+                <li><a href="participer.html">Participer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro-donner">
+            <div class="text-donner">
+                <h2>Voulez-vous aider?</h2>
+                <p>Votre soutien peut faire une différence significative dans la protection de la faune et de son
+                    habitat. En faisant un don à notre fondation, vous contribuez directement à des projets de
+                    conservation essentiels, à la réhabilitation des espèces menacées et à l'éducation des communautés
+                    sur l'importance de la biodiversité.</p>
+                <h3>Pourquoi donner ?</h3>
+                <ul class="points-donner">
+                    <li>Aidez-nous à sauvegarder les animaux en danger d'extinction.</li>
+                    <li>Votre contribution permet de restaurer les écosystèmes vitaux.</li>
+                    <li>Ensemble, nous pouvons informer les générations futures sur la nécessité de préserver notre
+                        planète.</li>
+                </ul>
+                <p>Il est facile de faire un don en ligne. Rejoignez-nous dans notre mission pour protéger la faune et
+                    la flore de notre planète.</p>
+                <p>Merci pour votre générosité et votre engagement envers la nature !</p>
+            </div>
+            <aside>
+                <img id="quokka-image" src="../images/donner/6a010535647bf3970b02942f9e6ed7200c-800wi.jpg"
+                    alt="Image d'un quokka souriant">
+            </aside>
+        </section>
+        <section class="formulaire-donner">
+            <form action="" id="donationForm">
+                <div id="donation-form-inputs">
+                    <div id="donation-form-inputs-column">
+                        <label for="prenom">Prénom<span class="requis">*</span></label><br>
+                        <input type="prenom" id="prenom" name="prenom"><br>
+                        <label for="nom">Nom<span class="requis">*</span></label><br>
+                        <input type="nom" id="nom" name="nom"><br>
+                        <label for="telephone">Téléphone<span class="requis">*</span></label><br>
+                        <input type="number" id="telephone" name="telephone" template="1234567890"><br>
+                        <label for="courriel">Courriel<span class="requis">*</span></label><br>
+                        <input type="email" id="courriel" name="courriel"><br>
+                    </div>
+                    <div id="donation-form-inputs-column">
+                        <label for="montant" id="montant-text">Montant du don<span class="requis">*</span></label>
+                        <div id="boutons-argent">
+                            <!--<input type="radio" id="10d" name="don" value="10"> $10
+                            <input type="radio" id="20d" name="don" value="20"> $20
+                            <input type="radio" id="50d" name="don" value="50"> $50
+                            <input type="radio" id="argentInput" name="don" value="$"> $-->
+                            <input type="number" id="montant" name="don">
+                            <br>
+                        </div>
+                        <label for="message">Message</label><br>
+                        <textarea id="message" name="message" rows="6"></textarea><br>
+
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" name="soumettre" id="soumettre">
+                </div>
+                <script src="../scripts/script_survol.js"></script>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footerNav">
+            <a href="a_propos.html">
+                <h2>Découvrez</h2>
+                <p>Les membres de notre équipe et ce qu'ils font pour protéger des mammifères en voie d'extinction.</p>
+            </a>
+            <a href="contacter.html">
+                <h2>Dites-nous</h2>
+                <p>Ce que vous pensez! Votre opinion est important et pourrait sauver des animaux en danger.</p>
+            </a>
+            <a href="donner.html">
+                <h2>Donnez</h2>
+                <p>Pour une cause charitable et aidez une faune qui a besoin de vous.</p>
+            </a>
+            <a href="participer.html">
+                <h2>Participez</h2>
+                <p>À l'effort pour un futur riche en diversité animale et faites une différence.</p>
+            </a>
+        </div>
+        <hr>
+        <div class="footerLiens">
+            <span class="reseauxSociaux">
+                <a href="https://www.instagram.com/" target="_blank"><img
+                        src="../images/footer/Instagram_Glyph_White.svg" alt="Logo Instagram">@FourruresEnAction</a>
+                <a href="https://www.facebook.com/" target="_blank"><img
+                        src="../images/footer/Facebook_Logo_Secondary.png" alt="Logo Facebook">FourruresEnAction</a>
+                <a href="https://x.com/?lang=fr" target="_blank"><img src="../images/footer/logo_X.svg"
+                        alt="Logo X">@FourruresEnAction</a>
+            </span>
+            <span>
+                <a href="#logo-titre">Retour en haut</a>
+            </span>
+        </div>
+    </footer>
+    <script src="../scripts/script_donner.js"></script>
+</body>
+
+</html>

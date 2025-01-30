@@ -1,0 +1,100 @@
+/*style des éléments textuels*/
+.intro-donner {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-donner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.intro-text-donner p {
+    margin-top: 1%;
+}
+
+.intro-text-donner h3 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.points-donner {
+    display: flex;
+    flex-direction: column;
+}
+
+/*style de l'image*/
+#quokka-image {
+    width: 100%;
+    border-radius: 2vh;
+}
+
+/*style du formulaire*/
+.formulaire-donner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-aside);
+    padding: 2%;
+    border-radius: 1em;
+    width: 100%;
+}
+
+input {
+    width: 130%;
+    box-sizing: border-box;
+}
+
+#boutons-argent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5px;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.don {
+    background-color: var(--white);
+    border-color: var(--bg-background-color);
+    font-size: 20px;
+}
+
+#montant-text {
+    text-align: center;
+    margin-top: 0.1em;
+}
+
+#message {
+    width: 100%;
+}
+
+#donationForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#donation-form-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#donation-form-inputs-column{
+    margin-left: 30px;
+    margin-right: 30px;
+}

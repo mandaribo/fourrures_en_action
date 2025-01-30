@@ -1,0 +1,53 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*style du conteneur principal*/
+.contenu-a-propos{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/*style du tableau*/
+table{
+    border: 4px dotted var(--menu-page-active);
+    width: 70%;
+    border-collapse: collapse;
+}
+
+table img{
+    border-radius: 50px;
+}
+
+tr, td{
+    padding: 10px;
+    border: 4px dotted var(--menu-page-active);
+}
+
+table a{
+    color: var(--bg-header-color);
+    border-radius: 5px;
+    margin: 3px;
+}
+
+table .animal-prefere{
+    text-align: center;
+}
+
+/*style de la vidéo*/
+aside{
+    width: fit-content;
+    align-content: center;
+    justify-content: center;
+}
+
+iframe{
+    margin-right: 5px;
+}

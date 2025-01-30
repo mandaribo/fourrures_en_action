@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/animaux.css">
+    <title>Animaux</title>
+</head>
+<body>
+    <header>
+        <div id="logo-titre">
+            <a href="../index.html">
+                <ul>
+                    <li><img src="../images/accueil/paw-icon.svg" alt="Logo du site en forme dune patte" width="30px"></li>
+                    <li><h1>Fourrures En Action</h1></li>
+                </ul>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="animaux.html" id="page-active">Animaux</a></li>
+                <li><a href="a_propos.html">À propos</a></li>
+                <li><a href="donner.html">Donner</a></li>
+                <li><a href="contacter.html">Contacter</a></li>
+                <li><a href="participer.html">Participer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--container avec la galerie d'images -->
+    <div class="galerie-d-images">
+        <!--les images-->
+        <div class="photo-galerie animation">
+            <img src="../images/animaux/1080px-Loxodonta_cyclotis.jpg" alt="Photo d'éléphants de forêt d'afrrique par Thomas Breuer">
+        </div>
+        <div class="photo-galerie animation">
+            <img src="../images/animaux/800px-Enhydra_lutris.jpg" alt="Photo de loutres de mer par Ed Bowlby">
+        </div>
+        <div class="photo-galerie animation">
+            <img src="../images/animaux/1080px-Ailurus_fulgens.jpg" alt="Photo de panda roux par Mathias Appel">
+        </div>
+        <div class="photo-galerie animation">
+            <img src="../images/animaux/722px-Mustela_nigripes.jpg" alt="Photo de putois a pied noir par USFWS Mountain Prairie">
+        </div>
+        <div class="photo-galerie animation">
+            <img src="../images/animaux/1081px-Setonix_brachyurus.jpg" alt="Photo de quokka par Ena Music">
+        </div>
+        <div class="photo-galerie animation">
+            <img src="../images/animaux/1440px-Panthera_Tigris.jpg" alt="Photo de tigre de Sibérie par S. Taheri, modifiée par Fir002.">
+        </div>
+        <!--les boutons pour changer les photos-->
+        <a class="prev" onclick="changerPhoto(-1)">&#10094;</a>
+        <a class="next" onclick="changerPhoto(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <span class="point" onclick="photoActive(1)"></span>
+        <span class="point" onclick="photoActive(2)"></span>
+        <span class="point" onclick="photoActive(3)"></span>
+        <span class="point" onclick="photoActive(4)"></span>
+        <span class="point" onclick="photoActive(5)"></span>
+        <span class="point" onclick="photoActive(6)"></span>
+    </div>
+    <aside class="navigation-animaux">
+        <h2>Découvrez nos amis</h2>
+        <div>
+            <a href="#elephant" class="lien-elephant">Éléphant de forêt d'Afrique</a>
+            <a href="#loutre" class="lien-loutre">Loutre de mer</a>
+            <a href="#panda" class="lien-panda">Panda Roux</a>
+            <a href="#putois" class="lien-putois">Putois à pieds noirs</a>
+            <a href="#quokka" class="lien-quokka">Quokka</a>
+            <a href="#tigre" class="lien-tigre">Tigre</a>
+        </div>
+    </aside>
+
+    <main>
+        <div class="carte" id="elephant">
+            <div class="profil">
+                <img src="../images/animaux/1080px-Loxodonta_cyclotis.jpg" alt="Photo d'éléphants de forêt d'afrrique par Thomas Breuer">
+                <h3>Nom Scientifique: Loxodonta cyclotis</h3>
+                <audio controls>
+                    <source src="../audio/elephant/271267-Elephant_aggression_7_center.wav" type="audio/wav">
+                    <source src="../audio/elephant/elephant-trumpets-growls-6047.mp3" type="audio/mpeg">
+                    Votre furteur ne supporte pas l'élément audio
+                </audio>
+            </div>
+            <div class="description">
+                <h2>Éléphant de forêt d'Afrique</h2>
+                <p>
+                    L'éléphant de forêt d'Afrique (Loxodonta cyclotis) est un mammifère mégaherbivore de la famille des Éléphantidés, plus petit que les autres
+                    éléphants d'Afrique et typiquement forestier (bien qu'épisodiquement aussi présent en zone de transition vers la savane). C'est l'une des deux
+                    espèces du genre Loxodonta (et des trois espèces d'éléphants existant actuellement). Cette espèce est moins connue que celle de l'éléphant de
+                    savane en raison d'obstacles écologiques et politiques, qui l'ont rendue plus difficile à étudier et à protéger.
+                </p>
+            </div>
+            <aside>
+                <p>
+                    L’espèce a perdu, en 10 ans, près de 80 % de sa population dans un vaste parc pourtant sanctuarisé, au Gabon, son principal pays d'accueil.
+                </p>
+            </aside>
+        </div>
+
+        <div class="carte" id="loutre">
+            <div class="profil">
+                <img src="../images/animaux/800px-Enhydra_lutris.jpg" alt="Photo de loutres de mer par Ed Bowlby">
+                <h3>Nom Scientifique: Enhydra lutris</h3>
+                <audio controls>
+                    <source src="../audio/loutre/222844-Otter-multiple-moans.wav" type="audio/wav">
+                    Votre furteur ne supporte pas l'élément audio
+                </audio>
+            </div>
+            <div class="description">
+                <h2>Loutre de mer</h2>
+                <p>
+                    La loutre de mer (Enhydra lutris) est une grande loutre (famille des mustélidés) vivant dans le Pacifique Nord, du nord du Japon (île de Hokkaidō)
+                    à la Californie, en passant par le Kamtchatka, les îles Aléoutiennes et l'Alaska. C'est la plus aquatique et la plus massive des loutres
+                    (elle peut atteindre jusqu'à 45 kg), mais aussi la seule à pouvoir vivre en permanence dans la mer. Les loutres de mer forment la seule espèce du
+                    genre Enhydra.
+                </p>
+            </div>
+            <aside>
+                <p>
+                    La population originelle comptait sans doute des centaines de milliers d’individus.
+                    Le nombre des sous-espèces est difficile à déterminer, mais il y en a trois aujourd’hui.
+                </p>
+            </aside>
+        </div>
+
+        <div class="carte" id="panda">
+            <div class="profil">
+                <img src="../images/animaux/1080px-Ailurus_fulgens.jpg" alt="Photo de panda roux par Mathias Appel">
+                <h3>Nom Scientifique: Ailurus fulgens</h3>
+                <p>Cri du panda roux</p>
+                <audio controls>
+                    <source src="../audio/panda-roux/Voicy_Red Panda Sound.mp3" type="audio/mpeg">
+                    Votre furteur ne supporte pas l'élément audio
+                </audio>
+            </div>
+            <div class="description">
+                <h2>Panda roux</h2>
+                <p>
+                    Le Panda roux a une fourrure brun roux, une longue queue touffue et une démarche dandinante en raison de ses pattes avant plus courtes ;
+                    il est à peu près de la taille d'un chat, bien que son corps soit plus long. Il est arboricole et a un régime alimentaire omnivore,
+                    essentiellement herbivore et riche en bambous, alors qu'il appartient à l'ordre des carnivores. C'est un animal solitaire, principalement
+                    actif du crépuscule à l'aube, et il est largement sédentaire pendant la journée.
+                </p>
+            </div>
+            <aside>
+                <p>
+                    La population sauvage est estimée à moins de 10 000 individus
+                    matures et continue à décliner en raison de la perte et de la fragmentation de son habitat, du braconnage et de la consanguinité.
+                </p>
+            </aside>
+        </div>
+
+        <div class="carte" id="putois">
+            <div class="profil">
+                <img src="../images/animaux/722px-Mustela_nigripes.jpg" alt="Photo de putois a pied noir par USFWS Mountain Prairie">
+                <h3>Nom Scientifique: Mustela nigripes</h3>
+                <!--<audio controls>
+                    <source src="" type="">
+                    <source src="" type="">
+                    Votre furteur ne supporte pas l'élément audio
+                </audio>-->
+                <a class="audio-lien" href="https://www.youtube.com/watch?v=egYv-LfvVw8" target="_blank">Cri du putois sur YouTube</a>
+            </div>
+            <div class="description">
+                <h2>Putois à pieds noirs</h2>
+                <p>
+                    Le Putois à pieds noirs est un petit mammifère carnivore de la famille des mustélidés, habitant de la prairie d'Amérique du Nord. Il est
+                    également appelé furet à pieds noirs, traduction littérale de son nom d'origine « black footed ferret », ou encore putois américain au Canada.
+                    Il ne doit pas être confondu avec la variante, dite « furet américain », de son cousin domestique le furet (Mustela putorius furo). Mustela
+                    nigripes est étroitement apparenté au putois des steppes (Mustela eversmannii) originaire de Russie. Le putois à pieds noirs est la seule espèce
+                    de putois indigène en Amérique du Nord.
+                </p>
+            </div>
+            <aside>
+                <p>
+                    Le putois à pieds noirs s'est éteint en tant qu'espèce sauvage au Canada en 1937, et a été classé espèce en danger aux États-Unis en 1967.
+                </p>
+            </aside>
+        </div>
+
+        <div class="carte" id="quokka">
+            <div class="profil">
+                <img src="../images/animaux/1081px-Setonix_brachyurus.jpg" alt="Photo de quokka par Ena Music">
+                <h3>Nom Scientifique: Setonix brachyurus</h3>
+                <!--<audio controls>
+                    <source src="" type="">
+                    <source src="" type="">
+                    Votre furteur ne supporte pas l'élément audio
+                </audio>-->
+                <a class="audio-lien" href="https://alphabetimals.com/animal-dictionary/animals-that-start-with-q/quokka/" target="_blank">Cri du quokka sur Alphabetimals.com</a>
+            </div>
+            <div class="description">
+                <h2>Quokka</h2>
+                <p>
+                    Le quokka (Setonix brachyurus) est un petit marsupial de la famille des macropodidés. Seul membre du genre Setonix, son nom est un dérivé
+                    du mot nyungar gwaga. Il se trouve en Australie-Occidentale.Le quokka pèse de 2,5 à 5 kg et mesure de 40 à 54 cm de long, avec une queue
+                    relativement courte pour un marsupial, d’une longueur de 25 à 30 cm. Sa fourrure, au poil grossier, est d'un brun gris sur le dos virant
+                    au chamois sous le ventre. C'est un animal trapu, avec des oreilles rondes et une tête courte et large. Sa durée de vie est de 5 à 10 ans.
+                </p>
+            </div>
+            <aside>
+                <p>
+                    À la suite de l'introduction de prédateurs non naturels comme le renard ou le chat sauvage dans le territoire australien, la population du quokka est en baisse.
+                </p>
+            </aside>
+        </div>
+
+        <div class="carte" id="tigre">
+            <div class="profil">
+                <img src="../images/animaux/1440px-Panthera_Tigris.jpg" alt="Photo de tigre de Sibérie par S. Taheri, modifiée par Fir002.">
+                <h3>Nom Scientifique: Panthera tigris</h3>
+                <audio controls>
+                    <source src="../audio/tigre/222638-Bengal-Tiger-low-groan-short.wav" type="audio/wav">
+                    Votre furteur ne supporte pas l'élément audio
+                </audio>
+            </div>
+            <div class="description">
+                <h2>Tigre</h2>
+                <p>
+                    Le Tigre (Panthera tigris) est une espèce de mammifère carnivore de la famille des félidés (Felidae) du genre Panthera. Aisément reconnaissable à sa
+                    fourrure rousse rayée de noir, c'est le plus grand félin sauvage et l'un des plus grands carnivores terrestres, dépassé seulement par les plus grandes
+                    espèces d'ours. Jusqu'au XIXe siècle, le tigre était réputé mangeur d'hommes, ce qu'il peut être occasionnellement bien que ce soit rare. Comme la
+                    plupart des félins, c'est un animal généralement solitaire ; le mâle possède un territoire qui englobe les domaines de plusieurs femelles et ne participe
+                    pas à l'éducation des petits.
+                </p>
+            </div>
+            <aside>
+                <p>
+                    La chasse aux trophées a été une cause importante de régression du tigre. Le tigre, animal craint
+                    pour sa force et sa cruauté supposée, était le prédateur à tuer pour sa gloire personnelle.
+                </p>
+            </aside>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footerNav">
+            <a href="a_propos.html">
+                <h2>Découvrez</h2>
+                <p>Les membres de notre équipe et ce qu'ils font pour protéger des mammifères en voie d'extinction.</p>
+            </a>
+            <a href="contacter.html">
+                <h2>Dites-nous</h2>
+                <p>Ce que vous pensez! Votre opinion est important et pourrait sauver des animaux en danger.</p>
+            </a>
+            <a href="donner.html">
+                <h2>Donnez</h2>
+                <p>Pour une cause charitable et aidez une faune qui a besoin de vous.</p>
+            </a>
+            <a href="participer.html">
+                <h2>Participez</h2>
+                <p>À l'effort pour un futur riche en diversité animale et faites une différence.</p>
+            </a>
+        </div>
+        <hr>
+        <div class="footerLiens">
+            <span class="reseauxSociaux">
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/footer/Instagram_Glyph_White.svg" alt="Logo Instagram">@FourruresEnAction</a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/footer/Facebook_Logo_Secondary.png" alt="Logo Facebook">FourruresEnAction</a>
+                <a href="https://x.com/?lang=fr" target="_blank"><img src="../images/footer/logo_X.svg" alt="Logo X">@FourruresEnAction</a>
+            </span>
+            <span>
+                <a href="#logo-titre">Retour en haut</a>
+            </span>
+        </div>
+    </footer>
+<script src="../scripts/script_galerie.js"></script>
+</body>
+</html>

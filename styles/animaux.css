@@ -1,0 +1,157 @@
+:root{
+    --couleur-elephant: #d6c9a9;
+    --couleur-loutre: #c8ccc1;
+    --couleur-panda: #f19a7d;
+    --couleur-putois: #d3aea7;
+    --couleur-quokka: #ad987d;
+    --couleur-tigre: #d4a660;
+}
+
+/*style des raccourcis vers les animaux*/
+.navigation-animaux{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: -2%;
+    width: 45%;
+}
+.navigation-animaux h2{
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+.navigation-animaux div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.navigation-animaux a{
+    color: black;
+    font-size: 1.05em;
+    padding: 0.5em;
+    border-radius: 0.8em;
+    text-decoration: none;
+}
+
+/*style des cartes d'informations des animaux*/
+.carte{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3%;
+    margin: 5%;
+    border-radius: 5vh;
+}
+.carte h2{
+    text-transform: uppercase;
+}
+.carte .profil{
+    display: flex;
+    flex-direction: column;
+}
+.carte img {
+    width: 500px;
+    border-radius: 2vh;
+}
+.carte .description{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.carte aside{
+    width: 15%;
+}
+
+/*couleurs uniques des éléments reliés aux animaux*/
+#elephant, .lien-elephant{
+    background-color: var(--couleur-elephant);
+}
+#loutre, .lien-loutre{
+    background-color: var(--couleur-loutre);
+}
+#panda, .lien-panda{
+    background-color: var(--couleur-panda);
+}
+#putois, .lien-putois{
+    background-color: var(--couleur-putois);
+}
+#quokka, .lien-quokka{
+    background-color: var(--couleur-quokka);
+}
+#tigre, .lien-tigre{
+    background-color: var(--couleur-tigre);
+}
+
+/*galerie d'images*/
+.galerie-d-images{
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Adjust this value as needed */
+    margin: 0 auto;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -2%;
+}
+
+.photo-galerie {
+    display: none;
+    width: 100%;
+    height: 600px; /* Set your desired height here */
+}
+.photo-galerie img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.point {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--couleur-loutre);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #2d6736;
+}
+
+.animation{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

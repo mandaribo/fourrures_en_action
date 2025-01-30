@@ -1,0 +1,21 @@
+/*style des éléments textuels*/
+.intro-text-accueil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.points-accueil{
+    display: flex;
+}
+
+/*style de la vidéo*/
+.video-accueil{
+    display: flex;
+    justify-content: center;
+}
+
+video{
+    border-radius: 20px;
+}
